@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    tools:context="com.example.connor.googlemapsapp.MapsActivity"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:text="Login"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_weight="0.15"
+        android:backgroundTint="?android:attr/colorButtonNormal"
+        style="@android:style/Widget.Button"
+        android:onClick="launchSecond"
+        android:layout_width="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>
